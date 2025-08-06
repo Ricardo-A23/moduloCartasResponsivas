@@ -1,7 +1,7 @@
-package org.gobierno.carta.responsiva.proyecto.entities;
+package org.gobierno.carta.responsiva.proyecto.entities.enums;
 
 public enum EstatusCarta {
-    RECHAZADA,
+    CANCELADA,
     COMPLETADA,
     PENDIENTE
 }

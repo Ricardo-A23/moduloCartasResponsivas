@@ -1,6 +1,9 @@
 package org.gobierno.carta.responsiva.proyecto.entities;
 
 import jakarta.persistence.*;
+import lombok.*;
+import org.gobierno.carta.responsiva.proyecto.entities.enums.EstatusCarta;
+import org.gobierno.carta.responsiva.proyecto.entities.enums.TipoAsignacion;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -8,6 +11,11 @@ import java.util.UUID;
 
 @Entity()
 @Table(name = "cartas_responsivas")
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
 public class CartaResponsiva {
 
     @Id
@@ -54,83 +62,4 @@ public class CartaResponsiva {
         }
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getFolio() {
-        return folio;
-    }
-
-    public void setFolio(String folio) {
-        this.folio = folio;
-    }
-
-    public LocalDate getFechaEmision() {
-        return fechaEmision;
-    }
-
-    public void setFechaEmision(LocalDate fechaEmision) {
-        this.fechaEmision = fechaEmision;
-    }
-
-    public Usuario getReceptor() {
-        return receptor;
-    }
-
-    public void setReceptor(Usuario receptor) {
-        this.receptor = receptor;
-    }
-
-    public TipoAsignacion getTipoAsignacion() {
-        return tipoAsignacion;
-    }
-
-    public void setTipoAsignacion(TipoAsignacion tipoAsignacion) {
-        this.tipoAsignacion = tipoAsignacion;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public EstatusCarta getEstatus() {
-        return estatus;
-    }
-
-    public void setEstatus(EstatusCarta estatus) {
-        this.estatus = estatus;
-    }
-
-    public boolean isFirmada() {
-        return firmada;
-    }
-
-    public void setFirmada(boolean firmada) {
-        this.firmada = firmada;
-    }
-
-    public Usuario getResponsable() {
-        return responsable;
-    }
-
-    public void setResponsable(Usuario responsable) {
-        this.responsable = responsable;
-    }
-
-    public LocalDateTime getFechaCreacion() {
-        return fechaCreacion;
-    }
-
-    public void setFechaCreacion(LocalDateTime fechaCreacion) {
-        this.fechaCreacion = fechaCreacion;
-    }
 }

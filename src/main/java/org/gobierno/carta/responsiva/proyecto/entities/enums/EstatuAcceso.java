@@ -1,4 +1,7 @@
 package org.gobierno.carta.responsiva.proyecto.entities.enums;
 
-public class EstatuAcceso {
+public enum EstatuAcceso {
+    ACTIVO,
+    REVOCADO,
+    PENDIENTE,
 }

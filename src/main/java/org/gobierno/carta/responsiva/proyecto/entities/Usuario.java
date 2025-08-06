@@ -1,9 +1,15 @@
 package org.gobierno.carta.responsiva.proyecto.entities;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
 @Table(name = "usuarios")
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class Usuario {
 
     @Id

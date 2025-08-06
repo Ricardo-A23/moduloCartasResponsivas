@@ -1,12 +1,20 @@
 package org.gobierno.carta.responsiva.proyecto.entities;
 
 import jakarta.persistence.*;
+import lombok.*;
+import org.gobierno.carta.responsiva.proyecto.entities.enums.EstadoFisico;
+import org.gobierno.carta.responsiva.proyecto.entities.enums.EstatusBienes;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+
 
 @Entity
 @Table(name = "bienes")
+@Setter
+@Getter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class Bien {
 
     @Id
@@ -46,7 +54,7 @@ public class Bien {
     private EstatusBienes estatus; // Ej. ASIGNADO, EN ALMACÉN, DADO DE BAJA
 
     @ManyToOne
-    @JoinColumn(name = "carta_responsiva_id", nullable = false)
+    @JoinColumn(name = "carta_responsiva_id")
     private CartaResponsiva cartaResponsiva;
 
 
