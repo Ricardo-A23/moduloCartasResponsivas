@@ -1,7 +1,7 @@
-package org.gobierno.carta.responsiva.proyecto.repositories;
+package org.gobierno.carta.responsiva.proyecto.services;
 
 import org.gobierno.carta.responsiva.proyecto.entities.CartaAplicacion;
 import org.springframework.data.repository.CrudRepository;
 
-public interface CartaAplicacionRepository extends CrudRepository<CartaAplicacion, Long> {
+public class CartaAplicacionService {
 }

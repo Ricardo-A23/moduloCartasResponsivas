@@ -1,7 +1,7 @@
-package org.gobierno.carta.responsiva.proyecto.repositories;
+package org.gobierno.carta.responsiva.proyecto.services;
 
 import org.gobierno.carta.responsiva.proyecto.entities.Correo;
 import org.springframework.data.repository.CrudRepository;
 
-public interface CorreoRepository extends CrudRepository<Correo, Long> {
+public class CorreoService  {
 }
